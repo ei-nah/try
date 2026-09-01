@@ -11,24 +11,32 @@ modal.addEventListener("click", () => {
 });
 
 
+function Menu(e) {
+    let list = document.querySelector("ul");
 
-function Menu(e){
-    let list = document.querySelector('ul');
-        if (window.innerWidth < 640) {
-            if(e.name === 'menu'){
-                e.name = "close";
-                list.classList.add('top-[80px]', 'opacity-100');
-                list.classList.remove('pointer-events-none');
+    if (window.innerWidth < 640) {
+        if (e.name === "menu") {
+            e.name = "close";
+            list.classList.add("top-[80px]", "opacity-100");
+            list.classList.remove("pointer-events-none");
         } else {
             e.name = "menu";
-            list.classList.remove('top-[80px]', 'opacity-100');
-            list.classList.add('pointer-events-none');
+            list.classList.remove("top-[80px]", "opacity-100");
+            list.classList.add("pointer-events-none");
         }
     }
 }
 
+
+/* =========================
+   CHATLING AI
+   ========================= */
+
 window.chtlConfig = {
-    chatbotId: "1982572524"};
+    chatbotId: "1982572524",
+    displayType: "floating",
+    language: "en"
+};
 
 const chatlingScript = document.createElement("script");
 
@@ -39,12 +47,3 @@ chatlingScript.src = "https://chatling.ai/js/embed.js";
 chatlingScript.setAttribute("data-id", "1982572524");
 
 document.body.appendChild(chatlingScript);
-
-window.chtlConfig = {
-    displayType: 'floating',
-    language: 'en'
-};
-
-window.Chatling.open();
-
-window.Chatling.showChatIcon();
