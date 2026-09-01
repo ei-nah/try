@@ -39,3 +39,12 @@ chatlingScript.src = "https://chatling.ai/js/embed.js";
 chatlingScript.setAttribute("data-id", "1982572524");
 
 document.body.appendChild(chatlingScript);
+
+window.chtlConfig = {
+    displayType: 'floating',
+    language: 'en'
+};
+
+window.Chatling.open();
+
+window.Chatling.showChatIcon();
