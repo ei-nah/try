@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> About | Stephanie Bernardo </title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		</style>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body class="bg-gradient-to-br from-[#0f2a14] via-[#143115] to-black">
+		<header>
+			<nav class="p-5 bg-[#111d13] shadow sm:flex sm:items-center sm:justify-between">
+				<div class="flex justify-between items-center ">
+					<span class="text-2xl text-[#BFD9C0] font-bold"> SAB </span>
+					
+					<span class="text-3xl cursor-pointer mx-2 sm:hidden block"> 
+						<ion-icon name="menu" onclick="Menu(this)"></ion-icon> 
+					</span>
+				</div>
+
+				<ul class="sm:flex sm:items-center sm:static sm:opacity-100 sm:pointer-events-auto z-50 absolute bg-[#111d13] w-full left-0 sm:w-auto py-4 sm:py-0 pl-7 sm:pl-0 opacity-0 top-[-400px] pointer-events-none transition-all ease-in duration-500">
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="index.html" class="text-xl text-[#BFD9C0] hover:text-[#6EC471] duration-500">Home</a> 
+					</li>
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="about.html" class="text-xl md:text-xl text-[#BFD9C0] hover:text-[#6EC471] font-bold duration-500">About</a> 
+					</li>
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="tech-stack.html" class="text-xl text-[#BFD9C0] hover:text-[#6EC471] duration-500">Tech Stack</a> 
+					</li>
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="certification.html" class="text-xl text-[#BFD9C0] hover:text-[#6EC471] duration-500">Certifications</a> 
+					</li>
+				</ul>
+			</nav>
+		</header>
+				
+      <main class="content p-6 text-white">
+        <h1 class="text-center" > About Me </h1>
+
+        <div class="flex justify-center px-4 sm:px-6 md:px-10 mt-6">
+          <p class="text-justify bg-[#141F15] rounded-lg shadow-2xl shadow-[#49B650] p-5 sm:p-4 md:p-6 lg:p-10 text-sm sm:text-base md:text-lg w-full max-w-5xl leading-relaxed">
+            Knowledgeable in database querying and manipulation, as well as designing and developing web pages and mobile applications. I have applied these skills through 
+            academic projects, including building a simple student information system, developing various applications, and creating a personal portfolio. Aiming to contribute
+            a responsive and user-friendly website to the industry and community. 
+            <br><br>
+            Eager to expand my knowledge of programming tools, languages, and technologies through continuous learning and hands-on projects. Seeking opportunities in creativity, 
+            data querying, and backend development where I can apply and further enhance my technical skills. Currently gaining more experience in web development and exploring an 
+            interest in digital forensics.
+          </p>
+        </div>
+      </main>
+
+		<script src="style.js"></script>
+	</body>
+</html>

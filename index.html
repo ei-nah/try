@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Home | Stephanie Bernardo </title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		</style>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body class="bg-gradient-to-br from-[#0f2a14] via-[#143115] to-black">
+		<header>
+			<!-- Navigation Bar -->
+			<nav class="p-5 bg-[#111d13] shadow sm:flex sm:items-center sm:justify-between">
+				<div class="flex justify-between items-center ">
+					<span class="text-2xl text-[#BFD9C0] font-bold"> SAB </span>
+					
+					<span class="text-3xl cursor-pointer mx-2 sm:hidden block"> 
+						<ion-icon name="menu" onclick="Menu(this)"></ion-icon> 
+					</span>
+				</div>
+
+				<ul class="sm:flex sm:items-center sm:static sm:opacity-100 sm:pointer-events-auto z-50 absolute bg-[#111d13] w-full left-0 sm:w-auto py-4 sm:py-0 pl-7 sm:pl-0 opacity-0 top-[-400px] pointer-events-none transition-all ease-in duration-500">
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="index.html" class="text-xl md:text-xl text-[#BFD9C0] hover:text-[#6EC471] font-bold duration-500">Home</a> 
+					</li>
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="about.html" class="text-xl text-[#BFD9C0] hover:text-[#6EC471] duration-500">About</a> 
+					</li>
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="tech-stack.html" class="text-xl text-[#BFD9C0] hover:text-[#6EC471] duration-500">Tech Stack</a> 
+					</li>
+					<li class="mx-4 my-6 sm:my-0"> 
+						<a href="certification.html" class="text-xl text-[#BFD9C0] hover:text-[#6EC471] duration-500">Certifications</a> 
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main class="flex items-center justify-center mt-30">
+			<div class="flex flex-col items-center justify-center text-center p-2">
+				<img src="image/self-portrait.JPG" class="w-60 h-60 rounded-full justify-center">
+				<p class="text-3xl md:text-5xl font-bold text-green-200 text-center pt-4"> Stephanie Bernardo </p>
+				<p class="mt-2 text-lg md:text-2xl text-green-200 text-center">An aspiring web developer, UI/UX designer, and system architect with a passion for building user-friendly and efficient systems.</p>
+        <br>
+				<a href="https://github.com/ei-nah" target="_blank">
+					<ion-icon name="logo-github" size="large"></ion-icon>
+				</a>
+			</div>
+		</main>
+
+		<script src="style.js"></script>
+	</body>
+</html>
